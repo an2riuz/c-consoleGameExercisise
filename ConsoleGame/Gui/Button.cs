@@ -39,5 +39,10 @@ namespace ConsoleGame.Gui
         {
             isActive = true;
         }
+
+        public void SetInActive()
+        {
+            isActive = false;
+        }
     }
 }

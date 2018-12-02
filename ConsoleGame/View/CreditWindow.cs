@@ -32,7 +32,6 @@ namespace ConsoleGame.View
 
             creditTextBlock = new TextBlock(28 + 1, 10 + 1, 60 - 1, creditData);
 
-
             backButton = new Button(28 + 20, 10 + 14, 18, 3, "Back");
             backButton.SetActive();
 
@@ -47,6 +46,5 @@ namespace ConsoleGame.View
 
             Console.SetCursorPosition(0, 0);
         }
-
     }
 }
