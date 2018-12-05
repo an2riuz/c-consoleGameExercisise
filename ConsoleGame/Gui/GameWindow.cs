@@ -28,41 +28,12 @@ namespace ConsoleGame.View
             menuButtons.Add(startButton);
             menuButtons.Add(creditsButton);
             menuButtons.Add(quitButton);
-            
-            Render();
+        }
 
-            int hashCode;
-            do
-            {
-                hashCode = 39;
-                int i = 0;
-                while (hashCode == 39)
-                {
-                    if (i >= 0 && i < 3)
-                    {
-                        menuButtons[i].SetActive();
-                        Render();
-                        i++;
-                        menuButtons[i - 1].SetInActive();
-                    }
-                    ConsoleKeyInfo pressedChar = Console.ReadKey(true);
-                    hashCode = pressedChar.Key.GetHashCode();
-                }
-
-                while (hashCode == 37)
-                {
-                    if (i >= 0 && i < 3)
-                    {
-                        menuButtons[i].SetActive();
-                        Render();
-                        i--;
-                        menuButtons[i + 1].SetInActive();
-                    }
-                    ConsoleKeyInfo pressedChar = Console.ReadKey(true);
-                    hashCode = pressedChar.Key.GetHashCode();
-                }
-            } while (hashCode != 27);
-
+        public List<Button> MenuButtons
+        {
+            get { return menuButtons; }
+            set { menuButtons = value; }
         }
 
         public override void Render()

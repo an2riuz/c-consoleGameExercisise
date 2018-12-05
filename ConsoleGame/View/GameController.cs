@@ -1,4 +1,6 @@
 ﻿using ConsoleGame.Game;
+using ConsoleGame.View;
+using ConsoleGame.Gui;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,6 +14,12 @@ namespace ConsoleGame.View
             StartGame();
             Console.ReadKey();
         }
+
+        public void ExitToMenu()
+        {
+            GuiController exitToMenu = new GuiController();
+        }
+        
 
         static void StartGame()
         {
@@ -46,6 +54,7 @@ namespace ConsoleGame.View
                     {
                         case 27: //ConsoleKey.Escape:
                             needToRender = false;
+                            
                             break;
                         case 39: // ConsoleKey.RightArrow:
                             myGame.GetHero().MoveRight();
@@ -61,5 +70,7 @@ namespace ConsoleGame.View
                 System.Threading.Thread.Sleep(250);
             } while (needToRender);
         }
+       
     }
 }
+

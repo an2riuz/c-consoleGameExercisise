@@ -50,7 +50,7 @@ namespace ConsoleGame.Game
             }
         }
 
-        public Enemy getEnemyById(int id)
+        public Enemy GetEnemyById(int id)
         {
             foreach (Enemy enemy in enemies)
             {

@@ -6,7 +6,6 @@ namespace ConsoleGame.Gui
 {
     class Window : GuiObject
     {
-
         private Frame border;
 
         public Window(int x, int y, int width, int height, char borderChar) : base(x, y, width, height)
