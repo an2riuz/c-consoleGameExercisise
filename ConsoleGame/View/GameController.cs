@@ -58,6 +58,7 @@ namespace ConsoleGame.View
                             break;
                         case 39: // ConsoleKey.RightArrow:
                             myGame.GetHero().MoveRight();
+
                             break;
                         case 37: // ConsoleKey.LeftArrow:
                             myGame.GetHero().MoveLeft();
