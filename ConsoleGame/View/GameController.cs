@@ -27,7 +27,7 @@ namespace ConsoleGame.View
             GameScreen myGame = new GameScreen(30, 20);
 
             // fill game with game data.
-            myGame.SetHero(new Hero(5, 5, "HERO"));
+            myGame.SetHero(new Hero(15, 18, "@"));
 
             Random rnd = new Random();
             int enemyCount = 0;

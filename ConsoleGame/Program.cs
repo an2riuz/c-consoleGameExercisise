@@ -11,10 +11,6 @@ class MainApp
         GuiController guiController = new GuiController();
         guiController.ShowMenu();
         
-        
-
         Console.ReadKey();
-
-        
     }
 }
