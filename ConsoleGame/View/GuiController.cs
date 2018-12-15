@@ -52,7 +52,8 @@ namespace ConsoleGame.View
                         if (i == 1)
                         {
                             ShowCredits();
-                        } else if (i == 0)
+                        }
+                        else if (i == 0)
                         {
                             StartGame();
                         }
